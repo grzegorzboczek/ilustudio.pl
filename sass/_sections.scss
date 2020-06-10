@@ -1,0 +1,1637 @@
+//////////////////////
+// Hero Section
+.hero {
+    height: 100vh;
+    width: auto;
+
+    background: url(../img/fhd/fhd__hero.png);
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    @media only screen and (max-width: $bp_4096px) {
+        background: url(../img/fhd/fhd__hero.png);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+
+    @media only screen and (max-width: $bp_1920px) {
+        background: url(../img/4k/4k__hero.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    @media only screen and (max-width: $bp_1024px) {
+        font-size: 46.85%; 
+        height: 76.8rem;
+    }
+
+    @media only screen and (max-width: $bp_414px) {
+        background: url(../img/mobile/mobile__hero.png);
+        background-size: cover;
+        background-position: center;
+        height: 736px;
+    }
+
+    @media only screen and (max-width: $bp_412px) {
+        height: 846px;
+    }
+
+    @media only screen and (max-width: $bp_411px) {
+        height: 736px;
+    }
+
+    @media only screen and (max-width: $bp_375px) {
+        height: 667px;
+    }
+
+    @media only screen and (max-width: $bp_360px) {
+        height: 640px;
+    }
+
+    @media only screen and (max-width: $bp_320px) {
+        height: 568px;
+    }
+
+
+    &__logo {
+        height: 11rem;
+        width: 11rem;
+        margin-left: 12.8rem;
+        margin-top: 3rem;
+
+        @media only screen and (max-width: $bp_4096px) {
+            margin-left: 12.8rem;
+        }
+    
+        @media only screen and (max-width: $bp_601px) {
+            margin-left: 6rem;
+        }
+
+        @media only screen and (max-width: $bp_360px) {
+            margin-left: 3rem;
+        }
+    }
+
+    // Hamburger menu
+    .hero__divToHover {
+        cursor: pointer;
+
+        #hero__hamburger {
+            width: 3rem;
+            height: 2rem;
+            border: 0;
+            border-top: 1px solid $color-primary !important;
+            background: transparent;
+            -webkit-transition: .3s transform linear;
+            transition: .3s transform linear;
+            position: fixed;
+            right: 12.8rem;
+            top: 7.9rem;
+            z-index: 9999;
+
+            @media only screen and (max-width: $bp_4096px) {
+                right: 12.8rem;
+            }
+        
+            @media only screen and (max-width: $bp_601px) {
+                right: 6rem;
+            }
+
+            @media only screen and (max-width: $bp_360px) {
+                right: 3rem;
+            }
+
+            &:hover {
+                cursor: pointer; 
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                border-top: 1px solid $color-primary;
+                -webkit-transform: translateY(.50rem);
+                        transform: translateY(.50rem);
+                
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                border-top: 1px solid $color-primary;
+                -webkit-transform: translateY(1.2rem);
+                        transform: translateY(1.2rem);
+                -webkit-transition: .3s transform linear;
+                transition: .3s transform linear;
+            }
+        }
+    }
+
+
+    &__h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        font-family: 'Playfair Display', serif;
+        font-size: 8rem;
+        font-weight: 400;
+
+        position: absolute;
+        left: 50%;
+        top: 17.5rem;
+        transform: translate(-50%, 0%);
+
+        // Crazy H1 gradient with shadow <3
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 35%, rgba(242,188,175,1) 95%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(1px 0px 1px rgba(0, 0, 0, .3) );
+
+        @media only screen and (max-width: $bp_4096px) {
+            width: 70rem;
+            top: 17.5rem;
+            display: flex;
+        }
+      
+          @media only screen and (max-width: $bp_1440px) {
+            width: 70rem;
+        }
+
+        @media only screen and (max-width: $bp_1366px) {
+            width: 70rem;
+        }
+
+        @media only screen and (max-width: $bp_1024px) {
+            width: 70rem;
+            top: 23.5rem;
+        }
+
+        @media only screen and (max-width: $bp_601px) {
+            display: none !important;
+        }
+
+        .hero__h1-span {
+            font-weight: 400;
+            font-size: 2rem;
+            color: $white;
+            margin-bottom: -1.4rem;
+        }
+    }
+
+    // H1 mobile
+    .hero__h1-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        font-family: 'Playfair Display', serif;
+        font-size: 8rem;
+        font-weight: 400;
+
+        position: absolute;
+        left: 50%;
+        top: 17.5rem;
+        transform: translate(-50%, 0%);
+
+        // Crazy H1 gradient with shadow <3
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 35%, rgba(242,188,175,1) 95%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(1px 0px 1px rgba(0, 0, 0, .3) );
+
+        @media only screen and (max-width: $bp_4096px) {
+            display: none;
+            font-size: 8rem;
+        }
+
+        @media only screen and (max-width: $bp_601px) {
+            display: flex;
+            top: 23.5rem;
+        }
+
+        @media only screen and (max-width: $bp_360px) {
+            font-size: 6rem;
+        }
+
+
+        .hero__h1-span-mobile {
+            font-weight: 400;
+            font-size: 8rem;
+            color: $white;
+            margin-bottom: -1.4rem;
+        }
+    }
+
+    &__socialm-container {
+        position: absolute;
+        left: 12.8rem;
+        bottom: 9rem;
+
+        @media only screen and (max-width: $bp_4096px) {
+            left: 12.8rem;
+        }
+    
+        @media only screen and (max-width: $bp_601px) {
+            left: 6rem;
+        }
+
+        @media only screen and (max-width: $bp_360px) {
+            left: 3rem;;
+        }
+
+        .hero__socialm-link {
+            text-decoration: none;
+            margin-left: 1.1rem;
+
+            @media only screen and (max-width: $bp_4096px) {
+                margin-left: 1.1rem;
+            }
+
+            @media only screen and (max-width: $bp_414px) {
+                margin-left: 1.65rem;
+            }
+
+            .hero__social-icon {
+                font-size: 2rem;
+                color: $color-primary;
+
+                @media only screen and (max-width: $bp_4096px) {
+                    font-size: 2rem;
+                }
+
+                @media only screen and (max-width: $bp_414px) {
+                    font-size: 3rem;
+                }
+            }
+
+            .hero__social-icon:hover {
+                color: $color-secondary;
+            }
+        }
+
+        .hero__socialm-link-first {
+            margin-left: 0rem;
+        }
+    }
+
+    &__phone-mail-container {
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+        right: 12.8rem;
+        bottom: 7.7rem;
+
+        @media only screen and (max-width: $bp_4096px) {
+            right: 12.8rem;
+        }
+    
+        @media only screen and (max-width: $bp_601px) {
+            right: 6rem;
+        }
+
+        @media only screen and (max-width: $bp_360px) {
+            right: 3rem;;
+        }
+
+
+
+        .hero__phone {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: $color-primary;
+
+            @media only screen and (max-width: $bp_4096px) {
+                font-size: 1.6rem;
+            }
+
+            @media only screen and (max-width: $bp_414px) {
+                font-size: 2rem;
+            }
+            
+
+            .hero__phone-second {
+                color: $color-secondary;      
+            }
+        }
+
+        .hero__mail {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: $color-primary;
+            margin-top: 1rem;
+
+            @media only screen and (max-width: $bp_4096px) {
+                font-size: 1.6rem;
+            }
+
+            @media only screen and (max-width: $bp_414px) {
+                font-size: 2rem;
+            }
+
+            .hero__mail-second {
+                color: $color-secondary;
+
+            }
+        }
+    }
+}
+
+//////////////////////
+// About Section
+.about {
+    position: relative;
+    width: 100%;
+    height: 76.8rem;
+
+    &__text-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .about__h2 {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 8rem;
+            font-weight: 400;
+            margin-top: -2.3rem;
+            margin-bottom: 4.2rem;
+
+             // Crazy H2 gradient with shadow <3
+            background: linear-gradient(to bottom, rgba($color-h2-primary ,1)40%, rgba($color-h2-secondary, 1) 55%, rgba($color-h2-primary, 1) 65%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    
+        .about__span {
+            display: inline-block;
+            width: 73rem;
+            height: 12.8rem;
+            font-size: 2rem;
+            font-weight: 300;
+            line-height: 2.6rem;
+            text-align: center;
+
+            @media only screen and (max-width: $bp_4096px) {
+                width: 73rem;
+            }
+        
+            @media only screen and (max-width: $bp_601px) {
+                width: 70vw;
+            }
+        }
+    }
+}
+
+//////////////////////
+// Offer Section
+.offer {
+    height: 117.4rem;
+    width: auto;
+    position: relative;
+
+    @media only screen and (max-width: $bp_4096px) {
+        height: 117.4rem;
+    }
+
+    @media only screen and (max-width: $bp_799px) {
+        height: 206rem;
+    }
+
+    &__h2 {
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 8rem;
+        font-weight: 400;
+        margin-top: 3.7rem;
+        // margin-bottom: 4.2rem;
+
+         // Crazy H2 gradient with shadow <3
+         background: linear-gradient(to bottom, rgba($color-h2-primary ,1)40%, rgba($color-h2-secondary, 1) 55%, rgba($color-h2-primary, 1) 65%);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+    }
+
+    // Top 2 offers
+    &__container-up {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        margin-top: 8.81rem;
+
+        @media only screen and (max-width: $bp_4096px) {
+            flex-direction: row;
+        }
+
+        @media only screen and (max-width: $bp_799px) {
+            flex-direction: column;
+        }
+
+        .offer__manicure {
+
+            .offer__img {
+                width: 35rem;
+                height: 21.7rem;
+                border: solid 1px $color-primary;
+            }
+
+            .offer__h3 {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-top: 2rem;
+                margin-bottom: 0.9rem;
+
+                // Crazy H3 gradient
+                background: linear-gradient(to bottom, rgba($color-h3-primary ,1)50%, rgba($color-h3-secondary, 1) 75%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                @media only screen and (max-width: $bp_4096px) {
+                   text-align: left;
+                }
+        
+                @media only screen and (max-width: $bp_799px) {
+                    text-align: center;
+                }
+
+            }
+
+            .offer__underline {
+                width: 35rem;
+                height: 1px;
+                background-color: $color-secondary; // TEST PRIMARY!
+                margin-bottom: 0.9rem;
+
+                @media only screen and (max-width: $bp_4096px) {
+                    background-color: $color-secondary;
+                }
+         
+                @media only screen and (max-width: $bp_799px) {
+                    background-color: $color-primary;
+                }
+
+            }
+
+            .offer__p {
+                width: 35rem;
+                line-height: 2.4rem;
+                font-weight: 300;
+                font-size: 1.4rem;
+            }
+        }
+
+        .offer__pedicure {
+            margin-left: 12rem;
+
+            @media only screen and (max-width: $bp_4096px) {
+                margin-left: 12rem;
+            }
+    
+            @media only screen and (max-width: $bp_799px) {
+                margin-left: 0;
+                margin-top: 6rem;
+            }
+
+            .offer__img {
+                width: 35rem;
+                height: 21.7rem;
+                border: solid 1px $color-primary;
+            }
+
+            .offer__h3 {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-top: 2rem;
+                margin-bottom: 0.9rem;
+
+                // Crazy H3 gradient
+                background: linear-gradient(to bottom, rgba($color-h3-primary ,1)50%, rgba($color-h3-secondary, 1) 75%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                @media only screen and (max-width: $bp_4096px) {
+                    text-align: left;
+                 }
+         
+                 @media only screen and (max-width: $bp_799px) {
+                     text-align: center;
+                 }
+
+            }
+
+            .offer__underline {
+                width: 35rem;
+                height: 1px;
+                background-color: $color-secondary; // TEST PRIMARY!
+                margin-bottom: 0.9rem;
+
+                @media only screen and (max-width: $bp_4096px) {
+                    background-color: $color-secondary;
+                }
+         
+                @media only screen and (max-width: $bp_799px) {
+                    background-color: $color-primary;
+                }
+
+            }
+
+            .offer__p {
+                width: 35rem;
+                line-height: 2.4rem;
+                font-weight: 300;
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    // Bottom 2 offers
+    &__container-down {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+         margin-top: 8.81rem;
+        // margin-top: 8.7rem;
+
+        @media only screen and (max-width: $bp_4096px) {
+            flex-direction: row;
+            margin-top: 8.81rem
+        }
+
+        @media only screen and (max-width: $bp_799px) {
+            flex-direction: column;
+            margin-top: 6rem
+        }
+
+        .offer__zel {
+
+            .offer__img {
+                width: 35rem;
+                height: 21.7rem;
+                border: solid 1px $color-primary;
+            }
+
+            .offer__h3 {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-top: 2rem;
+                margin-bottom: 0.9rem;
+
+                // Crazy H3 gradient
+                background: linear-gradient(to bottom, rgba($color-h3-primary ,1)50%, rgba($color-h3-secondary, 1) 75%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                @media only screen and (max-width: $bp_4096px) {
+                    text-align: left;
+                 }
+         
+                 @media only screen and (max-width: $bp_799px) {
+                     text-align: center;
+                 }
+
+            }
+
+            .offer__underline {
+                width: 35rem;
+                height: 1px;
+                background-color: $color-secondary; // TEST PRIMARY!
+                margin-bottom: 0.9rem;
+
+                @media only screen and (max-width: $bp_4096px) {
+                    background-color: $color-secondary;
+                }
+         
+                @media only screen and (max-width: $bp_799px) {
+                    background-color: $color-primary;
+                }
+
+            }
+
+            .offer__p {
+                width: 35rem;
+                line-height: 2.4rem;
+                font-weight: 300;
+                font-size: 1.4rem;
+            }
+        }
+
+        .offer__brwi {
+            margin-left: 12rem;
+
+            @media only screen and (max-width: $bp_4096px) {
+                margin-left: 12rem;
+                margin-top: 0;
+            }
+    
+            @media only screen and (max-width: $bp_799px) {
+                margin-left: 0;
+                margin-top: 6rem;
+            }
+
+            .offer__img {
+                width: 35rem;
+                height: 21.7rem;
+                border: solid 1px $color-primary;
+            }
+
+            .offer__h3 {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-top: 2rem;
+                margin-bottom: 0.9rem;
+
+                // Crazy H3 gradient
+                background: linear-gradient(to bottom, rgba($color-h3-primary ,1)50%, rgba($color-h3-secondary, 1) 75%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                @media only screen and (max-width: $bp_4096px) {
+                    text-align: left;
+                 }
+         
+                 @media only screen and (max-width: $bp_799px) {
+                     text-align: center;
+                 }
+
+            }
+
+            .offer__underline {
+                width: 35rem;
+                height: 1px;
+                background-color: $color-secondary; // TEST PRIMARY!
+                margin-bottom: 0.9rem;
+
+                @media only screen and (max-width: $bp_4096px) {
+                    background-color: $color-secondary;
+                }
+         
+                @media only screen and (max-width: $bp_799px) {
+                    background-color: $color-primary;
+                }
+
+            }
+
+            .offer__p {
+                width: 35rem;
+                line-height: 2.4rem;
+                font-weight: 300;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+//////////////////////
+// Price List
+.pricelist {
+    height: 77rem;
+    width: auto;
+    position: relative;
+
+    @media only screen and (max-width: $bp_4096px) {
+        height: 77rem;
+    }
+
+    @media only screen and (max-width: $bp_799px) {
+        height: 145.5rem;
+    }
+
+    &__h2 {
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 8rem;
+        font-weight: 400;
+        margin-top: 3.7rem;
+        // margin-bottom: 4.2rem;
+
+        // Crazy H2 gradient with shadow <3
+        background: linear-gradient(to bottom, rgba($color-h2-primary ,1)40%, rgba($color-h2-secondary, 1) 55%, rgba($color-h2-primary, 1) 65%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__container {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3.5rem;
+
+        @media only screen and (max-width: $bp_4096px) {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        @media only screen and (max-width: $bp_799px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pricelist__left {
+            width: 44.5rem;
+
+            @media only screen and (max-width: $bp_4096px) {
+                width: 44.5rem;
+            }
+        
+            @media only screen and (max-width: $bp_601px) {
+                width: 70vw;
+            }
+
+            .pricelist__manicure {
+                @media only screen and (max-width: $bp_4096px) {
+                    margin-top: 0;
+                }
+        
+                @media only screen and (max-width: $bp_799px) {
+                    margin-top: 6rem;
+                }
+
+                .pricelist__h3 {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    margin-bottom: 0.9rem;
+                    text-align: center;
+    
+                    // Crazy H3 gradient
+                    background: linear-gradient(to bottom, rgba($color-h3-primary ,1)50%, rgba($color-h3-secondary, 1) 75%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                .pricelist__underline {
+                    width: 44.5rem;
+                    height: 1px;
+                    background-color: $color-primary; // TEST PRIMARY!
+                    margin-bottom: 0.9rem;
+
+                    @media only screen and (max-width: $bp_4096px) {
+                        width: 44.5rem;
+                    }
+                
+                    @media only screen and (max-width: $bp_601px) {
+                        width: 70vw;
+                    }
+                }
+
+                .pricelist__single-container {
+
+                    .pricelist__row {
+                        width: 44.5rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: .5rem;
+
+                        @media only screen and (max-width: $bp_4096px) {
+                            width: 44.5rem;
+                        }
+                    
+                        @media only screen and (max-width: $bp_601px) {
+                            width: 70vw;
+                        }
+                        
+
+                        .pricelist__offert {
+                            display: inline-block;
+                            font-weight: 400;
+                            font-size: 1.4rem;
+
+                        }
+
+                        .pricelist__price {
+                            display: inline-block;
+                            font-weight: 300;
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                    .pricelist__row-first {
+                        margin-top: .2rem;
+                    }
+                }
+            }
+        }
+
+        .pricelist__right {
+            width: 44.5rem;
+
+            @media only screen and (max-width: $bp_4096px) {
+                width: 44.5rem;
+            }
+        
+            @media only screen and (max-width: $bp_601px) {
+                width: 70vw;
+            }
+
+            .pricelist__pedicure {
+
+                @media only screen and (max-width: $bp_4096px) {
+                    margin-top: 0;
+                }
+        
+                @media only screen and (max-width: $bp_799px) {
+                    margin-top: 3rem;
+                }
+
+                .pricelist__h3 {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    margin-bottom: 0.9rem;
+                    text-align: center;
+    
+                    // Crazy H3 gradient
+                    background: linear-gradient(to bottom, rgba($color-h3-primary ,1)50%, rgba($color-h3-secondary, 1) 75%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                .pricelist__underline {
+                    width: 44.5rem;
+                    height: 1px;
+                    background-color: $color-primary; // TEST PRIMARY!
+                    margin-bottom: 0.9rem;
+
+                    @media only screen and (max-width: $bp_4096px) {
+                        width: 44.5rem;
+                    }
+                
+                    @media only screen and (max-width: $bp_601px) {
+                        width: 70vw;
+                    }
+                }
+
+                .pricelist__single-container {
+
+                    .pricelist__row {
+                        width: 44.5rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: .5rem;
+
+                        @media only screen and (max-width: $bp_4096px) {
+                            width: 44.5rem;
+                        }
+                    
+                        @media only screen and (max-width: $bp_601px) {
+                            width: 70vw;
+                        }
+                        
+
+                        .pricelist__offert {
+                            display: inline-block;
+                            font-weight: 400;
+                            font-size: 1.4rem;
+
+                        }
+
+                        .pricelist__price {
+                            display: inline-block;
+                            font-weight: 300;
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                    .pricelist__row-first {
+                        margin-top: .2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Henna & Żel margin top
+.pricelist__margin-top {
+    margin-top: 3rem;
+
+    @media only screen and (max-width: $bp_4096px) {
+        margin-top: 3rem !important;
+    }
+
+    @media only screen and (max-width: $bp_799px) {
+        margin-top: 0;
+    }
+}
+
+.pricelist__manicure-first {
+    @media only screen and (max-width: $bp_4096px) {
+        margin-top: 0;
+    }
+
+    @media only screen and (max-width: $bp_799px) {
+        margin-top: 3rem !important;
+    }
+}
+
+//////////////////////
+// Gallery
+.gallery {
+    height: 76.8rem;
+    width: auto;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: $bp_4096px) {
+        flex-direction: row;
+        height: 76.8rem;
+    }
+
+    @media only screen and (max-width: $bp_799px) {
+        flex-direction: column;
+        height: 86.5rem;
+    }
+
+    @media only screen and (max-width: $bp_640px) {
+        height: 91.5rem;
+    }
+
+    @media only screen and (max-width: $bp_500px) {
+        height: 94.5rem;
+    }
+
+    @media only screen and (max-width: $bp_414px) {
+        height: 73rem;
+    }
+
+    &__left {
+        margin-left: 08.89vw; // 128px
+
+        @media only screen and (max-width: $bp_4096px) {
+            margin-left: 08.89vw; // 128px
+            margin-top: 0;
+        }
+    
+        @media only screen and (max-width: $bp_799px) {
+            margin-left: 0;
+            margin-top: 3.7rem;
+            text-align: center;
+        }
+        
+
+        .gallery__h2 {
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-size: 8rem;
+            font-weight: 400;
+            margin-bottom: 3.5rem;
+
+            // Crazy H2 gradient with shadow <3
+            background: linear-gradient(to bottom, rgba($color-h2-primary ,1)40%, rgba($color-h2-secondary, 1) 55%, rgba($color-h2-primary, 1) 65%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            @media only screen and (max-width: $bp_4096px) {
+                text-align: left;
+            }
+        
+            @media only screen and (max-width: $bp_799px) {
+                text-align: center;
+            }
+        }
+
+        .gallery__p {
+            display: inline-block;
+            width: 30.90vw; // 445px
+            height: 12.8rem;
+            font-size: 2rem;
+            font-weight: 300;
+            line-height: 2.6rem;
+            text-align: left;
+
+            @media only screen and (max-width: $bp_4096px) {
+                text-align: left;
+                height: 12.8rem;
+                width: 30.90vw; // 445px
+            }
+        
+            @media only screen and (max-width: $bp_799px) {
+                text-align: center;
+            }
+
+            @media only screen and (max-width: $bp_640px) {
+                height: 28rem;
+            }
+
+            @media only screen and (max-width: $bp_414px) {
+                width: 30rem;
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+
+        position: absolute;
+        // right: 08.89vw; // 128px
+        right: 13.40vw; // 193px
+
+        @media only screen and (max-width: $bp_4096px) {
+            right: 13.40vw; // 193px
+        }
+      
+        @media only screen and (max-width: $bp_900px) {
+            right: 6rem; // 128px
+        }
+    
+        @media only screen and (max-width: $bp_799px) {
+            right: 50%;
+            transform: translate(50%, 0%);
+            top: 44rem;
+        }
+
+        @media only screen and (max-width: $bp_640px) {
+            top: 49rem;
+        }
+
+        @media only screen and (max-width: $bp_500px) {
+            top: 52rem;
+        }
+
+        @media only screen and (max-width: $bp_414px) {
+            top: 44rem;
+        }
+
+        .gallery__btn-left {
+            width: 3.5rem;
+            height: 6rem;
+            background-color: $color-primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: .5;
+
+            margin-right: 2rem;
+
+            transition: all .5s;
+
+            @media only screen and (max-width: $bp_4096px) {
+                margin-right: 2rem;
+            }
+
+            @media only screen and (max-width: $bp_320px) {
+                margin-right: 1rem;;
+            }
+
+            .gallery__icon {
+                font-size: 2rem;
+                color: $white;
+            }
+        }
+
+        .gallery__btn-left:hover {
+            opacity: .9;
+            cursor: pointer;
+        }
+
+        .gallery__btn-left:active {
+            opacity: .5;
+            cursor: pointer;
+        }
+
+        .gallery__images {
+            width: 44.5rem;
+            height: 33.4rem;
+            border: solid 1px $color-primary;
+
+            @media only screen and (max-width: $bp_4096px) {
+                width: 44.5rem;
+                height: 33.4rem;
+            }
+
+            @media only screen and (max-width: $bp_414px) {
+                width: 200px;
+                height: 150px;
+            }
+        }
+
+        .gallery__btn-right {
+            width: 3.5rem;
+            height: 6rem;
+            background-color: $color-primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: .5;
+
+            margin-left: 2rem;
+
+            transition: all .5s;
+
+            @media only screen and (max-width: $bp_4096px) {
+                margin-left: 2rem;
+            }
+
+            @media only screen and (max-width: $bp_320px) {
+                margin-left: 1rem;;
+            }
+
+            .gallery__icon {
+                font-size: 2rem;
+                color: $white;
+            }
+        }
+
+        .gallery__btn-right:hover {
+            opacity: .9;
+            cursor: pointer;
+        }
+
+        .gallery__btn-right:active {
+            opacity: .5;
+            cursor: pointer;
+        }
+    }
+}
+
+//////////////////////
+// Contact
+.contact {
+    height: 74.2rem;
+    width: auto;
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp_4096px) {
+        height: 74.2rem;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+  
+    @media only screen and (max-width: $bp_1100px) {
+        height: 80.2rem;
+    }
+
+    @media only screen and (max-width: $bp_799px) {
+        height: 130rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    @media only screen and (max-width: $bp_400px) {
+        height: 131rem;
+    }
+
+    &__h2 {
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 8rem;
+        font-weight: 400;
+        // margin-top: 3.7rem;
+        // margin-bottom: 4.2rem;
+
+        position: absolute;
+        top: 3.5rem;
+
+        // Crazy H2 gradient with shadow <3
+        background: linear-gradient(to bottom, rgba($color-h2-primary ,1)40%, rgba($color-h2-secondary, 1) 55%, rgba($color-h2-primary, 1) 65%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+
+    }
+
+    &__left {
+        width: 44.5rem;
+        margin-top: 21.1rem; // basic: 12.1rem
+        margin-left: 12rem;
+
+        @media only screen and (max-width: $bp_4096px) {
+            margin-left: 12rem;
+            margin-top: 21.1rem; // basic: 12.1rem
+            width: 44.5rem;
+        }
+    
+        @media only screen and (max-width: $bp_799px) {
+            margin-left: 0;
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            order: 2;
+            position: absolute;
+            top: 66rem;
+            width: 44.5rem;
+        }
+
+        @media only screen and (max-width: $bp_601px) {
+            width: 70vw;
+        }
+
+
+        .contact__map {
+            width: 445px;
+            height: auto;
+            border: solid 1px $color-primary;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media only screen and (max-width: $bp_4096px) {
+                width: 890px;
+                height: 668px;
+            }
+          
+              @media only screen and (max-width: $bp_2048px) {
+                width: 445px;
+                height: 334px;
+                // overflow: hidden;
+            }
+    
+            @media only screen and (max-width: $bp_601px) {
+                width: 70vw;
+            }
+
+            @media only screen and (max-width: $bp_414px) {
+                width: 80vw;
+            }
+
+            @media only screen and (max-width: $bp_375px) {
+                width: 83vw;
+            }
+
+            @media only screen and (max-width: $bp_360px) {
+                width: 84vw;
+                overflow: hidden;
+            }
+
+            @media only screen and (max-width: $bp_350px) {
+                width: 90vw;
+                overflow: hidden;
+            }
+            
+        }
+
+        .contact__phone-mail-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2.4rem;
+
+            @media only screen and (max-width: $bp_4096px) {
+                margin-top: 2.4rem;
+            }
+        
+            @media only screen and (max-width: $bp_799px) {
+                margin-top: 6rem;
+            }
+    
+    
+            .contact__phone {
+                font-family: 'Playfair Display', serif;
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: $color-primary;
+
+                @media only screen and (max-width: $bp_4096px) {
+                    font-size: 1.6rem;
+                }
+            
+                @media only screen and (max-width: $bp_799px) {
+                    font-size: 2rem;
+                    text-align: center;
+                }
+                
+    
+                .contact__phone-second {
+                    color: $color-secondary;         
+                }
+            }
+    
+            .contact__mail {
+                font-family: 'Playfair Display', serif;
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: $color-primary;
+                margin-top: 1rem;
+
+                @media only screen and (max-width: $bp_4096px) {
+                    font-size: 1.6rem;
+                    margin-top: 1rem;
+                }
+            
+                @media only screen and (max-width: $bp_799px) {
+                    font-size: 2rem;
+                    text-align: center;
+                    margin-top: 1rem;
+                }
+    
+                .contact__mail-second {
+                    color: $color-secondary;   
+                }
+            }
+        }
+    }
+
+    &__right {
+        width: 44.5rem;
+        height: auto;
+        margin-left: 12rem;
+        margin-top: 21.1rem; // basic: 12.1rem
+
+        display: flex;
+        flex-direction: column;
+
+        @media only screen and (max-width: $bp_4096px) {
+            margin-left: 12rem;
+            margin-top: 21.1rem; // basic: 12.1rem
+        }
+      
+          @media only screen and (max-width: $bp_2048px) {
+            margin-left: 6rem;
+        }
+
+        @media only screen and (max-width: $bp_1536px) {
+            margin-left: 12rem;
+        }
+
+        @media only screen and (max-width: $bp_1200px) {
+            margin-left: 18rem;
+        }
+
+        @media only screen and (max-width: $bp_1100px) {
+            margin-left: 24rem;
+        }
+
+        //Single Row Layout
+        @media only screen and (max-width: $bp_799px) {
+            margin-left: 0;
+            margin-top: 0;
+            align-items: center;
+            position: absolute;
+            left: 50%;
+            top: 20.8rem;
+            transform: translate(-50%, 0%);
+        }
+
+        @media only screen and (max-width: $bp_320px) {
+             width: 90vw;
+        }
+
+        .contact__span-h3style {
+            font-size: 1.4rem;
+            font-weight: 600;
+
+            // Crazy H3 gradient
+            background: linear-gradient(to bottom, rgba($color-h3-primary ,1)50%, rgba($color-h3-secondary, 1) 75%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            margin-bottom: 1.4rem;
+        }
+
+        .contact__span-h2style {
+            font-size: 2rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+
+            // Crazy H2 gradient with shadow <3
+            background: linear-gradient(to bottom, rgba($color-h2-primary ,1)40%, rgba($color-h2-secondary, 1) 55%, rgba($color-h2-primary, 1) 65%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-top: .5rem;
+        }
+
+        .contact__span {
+            font-size: 2rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            margin-top: .5rem;
+        }
+
+        .contact__span-little {
+            font-size: 1.4rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            margin-top: .7rem;
+        }
+
+        .contact__margin-top {
+            margin-top: 5.1rem;
+        }
+
+        .contact__socialm-container {
+            margin-top: 4.4rem;
+    
+            .contact__socialm-link {
+                text-decoration: none;
+                margin-left: 1.1rem;
+    
+                .contact__social-icon {
+                    font-size: 2rem;
+                    color: $color-primary;
+
+                    transition: all .5s;
+                }
+
+                .contact__social-icon:hover {
+                    color: $color-secondary;
+                }
+            }
+    
+            .contact__socialm-link-first {
+                margin-left: 0rem;
+            }
+        }
+    }
+
+    .contact__copyright {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 49rem;
+
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-family: 'Playfair Display', serif;
+
+        @media only screen and (max-width: $bp_4096px) {
+            width: 49rem;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: $bp_400px) {
+            width: 26rem;
+        }
+
+
+        .contact__link:link,
+        .contact__link:visited {
+            text-decoration: none;
+            color: $color-secondary;
+        }
+
+        .contact__link:hover {
+           border-bottom: solid 1px $color-secondary;
+        }
+    }
+}
+
+//////////////////////
+// Menu
+.menu {
+    height: 0vh; //from 0 to at click 100vh = animation effect!
+    width: 100vw;
+    background-color: $color-primary;
+    background-color: $white;
+    background: linear-gradient(to right top, rgba(255,255,255,1) 35%, rgba(242,188,175,1) 95%);
+    position: fixed;
+    z-index: 99999;
+
+    transition: all 2s;
+    // opacity: 0;
+
+    .menu__logo {
+        height: 11rem;
+        width: 11rem;
+        margin-left: 12.8rem;
+        margin-top: 3rem;
+        transition: all 1s;
+
+        opacity: 0; // turn to 1 in js
+
+        @media only screen and (max-width: $bp_4096px) {
+            margin-left: 12.8rem;
+        }
+    
+        @media only screen and (max-width: $bp_601px) {
+            margin-left: 6rem;
+        }
+
+        @media only screen and (max-width: $bp_360px) {
+            margin-left: 3rem;
+        }
+    }
+
+    .menu__ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+        transition: all .5s;
+        visibility: hidden; // JS animation effect!
+
+        .menu__li {
+            margin-top: 5rem;
+        }
+
+        .menu__li-first {
+            margin-top: 0;
+        }
+
+        .menu__a:link,
+        .menu__a:visited {
+            text-decoration: none;
+            font-size: 3.2rem;
+            font-weight: 300;
+            color: $color-primary;
+
+            transition: all .5s;
+        }
+
+        .menu__a:hover {
+            color: $color-secondary;
+        }
+    }
+}
+
+// Close Hamburger
+.menu__divToHover {
+    cursor: pointer;
+    position: fixed;
+    z-index: 999999999;
+    width: 3rem;
+    height: 3rem;
+    right: 12.7rem;
+    top: 7rem;
+
+    display: none;
+
+    @media only screen and (max-width: $bp_4096px) {
+        right: 12.7rem;
+    }
+
+    @media only screen and (max-width: $bp_601px) {
+        right: 6.8rem;
+    }
+
+    @media only screen and (max-width: $bp_360px) {
+        right: 3.8rem;
+    }
+
+    .menu__close {
+        width: 3rem;
+        height: 3rem;
+        border: 0;
+        border-top: 2px solid $color-secondary !important;
+        background: transparent;
+        -webkit-transition: .3s transform linear;
+        transition: .3s transform linear;
+        position: fixed;
+        right: 13.6rem;
+        top: 8rem;
+        z-index: 9999;
+        transform: rotate(45deg);
+        transition: all .4s;
+
+        @media only screen and (max-width: $bp_4096px) {
+            right: 13.6rem;
+        }
+    
+        @media only screen and (max-width: $bp_601px) {
+            right: 6.8rem;
+        }
+
+        @media only screen and (max-width: $bp_360px) {
+            right: 3.8rem;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-top: 2px solid $color-secondary;
+            transform: translateY(-.1rem) translateX(-.1rem) rotate(90deg);
+        }
+    }
+}
+
+.menu__divToHover:focus {
+    border: none;
+}

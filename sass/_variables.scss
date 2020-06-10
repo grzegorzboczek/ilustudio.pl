@@ -1,0 +1,127 @@
+////////////////////////////
+// Colors
+////////////////////////////
+$dark: #333333;
+$white: #fff;
+
+$color-primary: #eda08c;
+$color-secondary: #b77175;
+
+// Hero H1
+$color-h1-primary: #ffffff;
+$color-h1-secondary: #f2bcaf;
+
+// Basic H2
+$color-h2-primary: #eda08c;
+$color-h2-secondary: #b97477;
+
+// Basic H3
+$color-h3-primary: #ffbfaf;
+$color-h3-secondary: #e4b1a5;
+
+
+
+////////////////////////////
+// RWD BREAK POINTS
+////////////////////////////
+
+// -> 4K = 4096px x 2304px *4K PHOTOS/RETINA*
+$bp_4096px: 256em; // 4096px
+
+$bp_3400px: 212.5em; // 3400px
+
+// -> 3K = 3326px x 1871px
+$bp_3326px: 207.875em; // 3326px
+$bp_2900px: 181.25em; // 2900px
+$bp_2600px: 162.5em; // 2600px
+$bp_2300px: 143.75em; // 2300px
+
+// -> 2K = 2048px 1080px
+$bp_2048px: 128em; // 2048px
+
+// -> HD = 1920px x 1080px < 11.6% > *FHD PHOTOS* 
+$bp_1920px: 120em; // 1920px @@@ MUST HAVE! @@@
+$bp_1800px: 112.5em; // 1800px
+$bp_1700px: 106.25em; // 1700px
+
+// -> 1600px x 900px < 2.7% >
+$bp_1600px: 100em; // 1600px
+
+// -> 1536px x 864px < 4% >
+$bp_1536px: 96em; // 1536px
+
+// -> 1440px x 900px < 4% >
+$bp_1440px: 90em; // 1440px
+$bp_1400px: 87.5em; // 1400px
+
+// -> Laptop 15’ = 1366px x 768px < 11.1% > 
+$bp_1366px: 85.375em; // 1366px @@@ MUST HAVE! @@@
+$bp_1300px: 81.25em; // 1300px
+
+// -> Laptop 13’ = 1280px x 720px
+$bp_1280px: 80em; // 1280px
+$bp_1200px: 75em; // 1200 px /16
+$bp_1100px: 68.75rem; // 1100px
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// STĄÐ Z 100VH W HERO -> ZMIENIAMY NA DANY BREAKPOINT RES np. tu width: 1024px
+
+
+// -> HD / Tablet = 1024px x 768px / 1024×1366 *HD PHOTOS*
+$bp_1024px: 64em; // 1024px
+$bp_1000px: 62.5em; // 1000px
+$bp_950px: 59.375em; // 950px
+$bp_900px: 56.25em;// 950px
+$bp_850px: 53.125em; // 850px
+
+// -> Tablet 800px x 1280px LANDSCAPE (5% of all tablets)
+$bp_800px: 50em; // 800px
+
+// -> From 799px Single Row Layout
+$bp_799px: 49.9375em; // 799px
+
+
+
+// -> iPad Mini, Air, Third = 768 x 1024 < 2.5% > ! LANDSCAPE (55% of all tablets)
+$bp_768px: 48em; // 768 px @@@ MUST HAVE! @@@
+$bp_750px: 46.875em; // 750px
+
+// -> 720 x 1280px < 1.68% > Phones
+$bp_720px: 45em; // 720px
+$bp_660px: 41.25em; // 660px
+
+// -> Little tablet = 640px x 480px
+$bp_640px: 40em; // 640px
+
+// -> Tablet = 601px x 962px PORTRAIT
+$bp_601px: 37.5625em; // 601px
+
+// -> Tablet = 600px x 1024px PORTRAIT
+$bp_600px: 37.5em; // 600px
+
+$bp_600px: 37.5em; // 600px
+$bp_570px: 35.625em; // 570px
+$bp_550px: 34.375em; // 550px
+$bp_500px: 31.25em; // 500px
+$bp_450px: 28.125em; // 450px
+
+// -> Big Smartphones (iPhone Plus) = 414px x 736px < 3.3% > *PHONE PHOTOS*
+$bp_414px: 25.875em; // 414px
+
+// -> Big Smartphones = 412px x 846px < 3.1% >
+$bp_412px: 25.75em; // 412px
+$bp_411px: 25.6875em;// 411px
+$bp_400px: 25em; // 400px
+
+// -> Smartphones = 375px x 667px < 6.6% >
+$bp_375px: 23.4375em;
+
+// -> Smartphones = 360px x 640px < 14.9% > 
+$bp_360px: 22.5em; // 360px @@@ MUST HAVE! @@@
+$bp_350px: 21.875em; // 350px
+$bp_320px: 20em; //320px
+
+// EXAMPLE HOW TO USE MEDIA QUERIES:
+// @media only screen and (max-width: $bp-largest) {
+// }

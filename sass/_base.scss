@@ -1,0 +1,114 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+    scroll-behavior: smooth;
+    color: $dark;
+    
+    @media only screen and (max-width: $bp_4096px) {
+      font-size: 187.41%;
+    }
+
+    @media only screen and (max-width: $bp_3400px) {
+      font-size: 155.56%;
+    }
+
+    @media only screen and (max-width: $bp_3326px) {
+      font-size: 152.18%;
+    }
+
+    @media only screen and (max-width: $bp_2900px) {
+      font-size: 132.69%;
+    }
+
+    @media only screen and (max-width: $bp_2600px) {
+      font-size: 118.96%;
+    }
+
+    @media only screen and (max-width: $bp_2300px) {
+      font-size: 105.23%;
+    }
+
+    @media only screen and (max-width: $bp_2048px) {
+      font-size: 93.70%;
+    }
+
+    @media only screen and (max-width: $bp_1920px) {
+      font-size: 87.85%;
+    }
+
+    @media only screen and (max-width: $bp_1800px) {
+      font-size: 82.36%;
+    }
+
+    @media only screen and (max-width: $bp_1700px) {
+      font-size: 77.78%;
+    }
+
+    @media only screen and (max-width: $bp_1600px) {
+      font-size: 73.21%;
+    }
+
+    @media only screen and (max-width: $bp_1536px) {
+      font-size: 70.28%;
+    }
+
+    @media only screen and (max-width: $bp_1440px) {
+      font-size: 62.5%; // 1rem = 10px
+    }
+
+    @media only screen and (max-width: $bp_1366px) {
+      font-size: 62.5%; // 1rem = 10px
+    }
+
+    @media only screen and (max-width: $bp_1300px) {
+      font-size: 59.48%; 
+    }
+
+    @media only screen and (max-width: $bp_1280px) {
+      font-size: 58.57%; 
+    }
+
+    @media only screen and (max-width: $bp_1200px) {
+      font-size: 54.90%; 
+    }
+
+    @media only screen and (max-width: $bp_1100px) {
+      font-size: 50.33%; 
+    }
+
+    @media only screen and (max-width: $bp_1024px) {
+      font-size: 46.85%; 
+    }
+
+    
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    // font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+  
+  ol,
+  ul {
+    list-style: none;
+  }
+  
